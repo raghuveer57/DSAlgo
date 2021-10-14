@@ -4,7 +4,10 @@ using namespace std;
 void ReverseArray(int p[], int first, int last, int size)
 {
     if( first < 0 || last >= size || first > last )
+    {
         cout << "Incorrect postions given in the function ReverseArray" << endl;
+        return;
+    }
 
     while(first < last)
     {
