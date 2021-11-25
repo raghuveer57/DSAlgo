@@ -1,7 +1,10 @@
 #include<iostream>
 using namespace std;
 
-void ReverseArray(int p[], int first, int last, int size)
+// subscript operator should be overloaded here
+// TODO: need to make this generic by probably using something size of (T)
+template <typename T>
+void ReverseArray(T p[], int first, int last, int size)
 {
     if( first < 0 || last >= size || first > last )
     {
@@ -15,10 +18,12 @@ void ReverseArray(int p[], int first, int last, int size)
         first++;
         last--;
     }
-    
 }
 
-void PrintArray(int p[], int size)
+// subscript operator should be overloaded here
+// TODO: need to make this generic by probably using something size of (T)
+template <typename T>
+void PrintArray(T p[], int size)
 {
     for( int i = 0; i < size; i++)
     {
@@ -27,9 +32,10 @@ void PrintArray(int p[], int size)
     cout << endl;
 }
 
-void swap(int &a , int &b)
+template <typename T>
+void swap(T &a , T &b)
 {
-    int temp = a;
+    T temp = a;
     a = b;
     b = temp;
 }
