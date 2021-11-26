@@ -4,7 +4,6 @@
 using namespace std;
 
 /*Find an efficient algorithm to rotate an array to k-positions to right*/
-
 void shiftArrayRight(int arr[], int size, int positions)
 {
 	ReverseArray(arr,0,size -1,size);
