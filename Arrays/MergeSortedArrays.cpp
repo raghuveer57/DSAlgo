@@ -2,6 +2,7 @@
 #include "../Utils/Utils.h"
 using namespace std;
 
+// TC : O(n), SC : O(1)
 void mergeArray(int a1[], int a2[], int size1, int size2, int a3[])
 {
     int i = 0;
@@ -20,6 +21,7 @@ void mergeArray(int a1[], int a2[], int size1, int size2, int a3[])
             a3[i+j] = a2[j];
             j++;
         }
+        // equality check needs to be handled additionally to merge the duplicates if specified.
     }
 
     // For the remaining elements after the comparison
