@@ -21,6 +21,7 @@ using namespace std;
 // Input: nums = [3,3], target = 6
 // Output: [0,1]
 
+// TC: O(n) SC: O(n)
 int* TwoSum(int* a, int size, int target)
 {
     int* result = new int[2]();
@@ -44,7 +45,7 @@ int* TwoSum(int* a, int size, int target)
 
 int main(int argc, char *argv[])
 {
-    int a[] = {3,3};
+    int a[] = {3,2,4};
     int target = 6;
     int* p =  TwoSum(a, sizeof(a)/sizeof(a[0]),target);
     PrintArray(p,2);
