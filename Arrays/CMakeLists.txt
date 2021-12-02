@@ -7,5 +7,6 @@ cmake_minimum_required (VERSION 3.8)
 add_executable (ReverseArray "ReverseArray.cpp")
 add_executable (MergeSortedArrays "MergeSortedArrays.cpp")
 add_executable(TwoSum "TwoSum.cpp")
+add_executable(MaxSubArraySum "MaxSubArraySum.cpp")
 
 # TODO: Add tests and install targets if needed.

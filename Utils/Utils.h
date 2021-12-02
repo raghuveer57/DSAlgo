@@ -33,6 +33,21 @@ void PrintArray(T p[], int size)
 }
 
 template <typename T>
+void PrintArray(T p[], int size, int start, int end)
+{
+    if( start >= size || end >= size)
+    {
+        cout << "Indexing is not correct" << endl;
+        return;
+    }
+    for( int i = start; i <= end; i++)
+    {
+        cout << p[i] << " ";
+    }
+    cout << endl;
+}
+
+template <typename T>
 void swap(T &a , T &b)
 {
     T temp = a;
