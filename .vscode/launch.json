@@ -1,0 +1,93 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ShiftArray",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/AdHocProblems/ShiftArray",
+            "args": [ "100000000" ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "ContainsDuplicate",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/ContainsDuplicate",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "LongestWord",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/LongestWord",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "MaxSubArraySum",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/MaxSubArraySum",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "MergeSortedArrays",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/MergeSortedArrays",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "ReverseArray",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/ReverseArray",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "TwoSum",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/TwoSum",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        }
+
+    ]
+}
