@@ -1,5 +1,14 @@
+#pragma once
 #include<iostream>
 using namespace std;
+
+template <typename T>
+void swaputil(T &a , T &b)
+{
+    T temp = a;
+    a = b;
+    b = temp;
+}
 
 // subscript operator should be overloaded here
 // TODO: need to make this generic by probably using something size of (T)
@@ -14,7 +23,7 @@ void ReverseArray(T p[], int first, int last, int size)
 
     while(first < last)
     {
-        swap(p[first],p[last]);
+        swaputil(p[first],p[last]);
         first++;
         last--;
     }
@@ -47,13 +56,7 @@ void PrintArray(T p[], int size, int start, int end)
     cout << endl;
 }
 
-template <typename T>
-void swap(T &a , T &b)
-{
-    T temp = a;
-    a = b;
-    b = temp;
-}
+
 
 void SayHello()
 {

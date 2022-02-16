@@ -87,6 +87,18 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "RearrangeArray",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/RearrangeArray",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
     ]

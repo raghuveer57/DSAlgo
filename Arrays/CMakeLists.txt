@@ -11,5 +11,6 @@ add_executable(MaxSubArraySum "MaxSubArraySum.cpp")
 add_executable(MoveZeros "MoveZeros.cpp")
 add_executable(ContainsDuplicate "ContainsDuplicate.cpp")
 add_executable(LongestWord "LongestWord.cpp")
+add_executable(RearrangeArray "RearrangeArray.cpp")
 
 # TODO: Add tests and install targets if needed.
