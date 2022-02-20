@@ -99,6 +99,18 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "TestList",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/LinkedLists/TestList",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
     ]

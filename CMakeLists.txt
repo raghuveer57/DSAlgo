@@ -9,4 +9,5 @@ project ("MiscProblems")
 # Include sub-projects.
 add_subdirectory ("AdHocProblems")
 add_subdirectory("Arrays")
+add_subdirectory("LinkedLists")
 
