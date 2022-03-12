@@ -10,4 +10,5 @@ project ("MiscProblems")
 add_subdirectory ("AdHocProblems")
 add_subdirectory("Arrays")
 add_subdirectory("LinkedLists")
+add_subdirectory("Queues")
 

@@ -111,6 +111,18 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "TestPQueue",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Queues/TestPQueue",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
     ]

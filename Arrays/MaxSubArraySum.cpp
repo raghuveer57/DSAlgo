@@ -52,13 +52,14 @@ int MaxSubArraySum(int* a, int size)
             end = i;
         all_time_max_sum = max(cur_max_sum,all_time_max_sum); // compare the sum parts with the max sum and update it when applicable
     }
-    PrintArray(a,size,start,end);
+    PrintArray(a,start,end);
     return all_time_max_sum;
 }
 
 int main(int argc, char *argv[])
 {
-    int a[] = {5,4,-1,7,8};
+    //int a[] = {5,4,-1,7,8};
+    int a[] = {-2,1,-3,4,-1,2,1,-5,4};
     int p =  MaxSubArraySum(a, sizeof(a)/sizeof(a[0]));
     cout << "Max sum is " << p << endl;
 }

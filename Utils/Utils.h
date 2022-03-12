@@ -42,13 +42,9 @@ void PrintArray(T p[], int size)
 }
 
 template <typename T>
-void PrintArray(T p[], int size, int start, int end)
+void PrintArray(T p[], int start, int end)
 {
-    if( start >= size || end >= size)
-    {
-        cout << "Indexing is not correct" << endl;
-        return;
-    }
+    //should add boundary checks
     for( int i = start; i <= end; i++)
     {
         cout << p[i] << " ";
