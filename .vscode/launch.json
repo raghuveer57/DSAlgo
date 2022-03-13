@@ -123,6 +123,18 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "Traversals",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Trees/Traversals",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
     ]
