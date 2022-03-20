@@ -2,6 +2,7 @@
 using namespace std;
 #include "../Utils/Utils.h"
 
+// returns the index where the sorted array is rotated
 int rotatedSortedIndex(int a[], int start, int end)
 {
     int rotIndex = -1;
@@ -9,6 +10,8 @@ int rotatedSortedIndex(int a[], int start, int end)
     while (start < end)
     {
         int mid = (start + end) / 2;
+        //condition for checking if the 
+        //index is rotated
         if (a[mid] > a[mid + 1])
         {
             rotIndex = mid;
