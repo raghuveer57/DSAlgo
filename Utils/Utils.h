@@ -1,9 +1,9 @@
 #pragma once
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 template <typename T>
-void swaputil(T &a , T &b)
+void swaputil(T &a, T &b)
 {
     T temp = a;
     a = b;
@@ -15,15 +15,15 @@ void swaputil(T &a , T &b)
 template <typename T>
 void ReverseArray(T p[], int first, int last, int size)
 {
-    if( first < 0 || last >= size || first > last )
+    if (first < 0 || last >= size || first > last)
     {
         cout << "Incorrect postions given in the function ReverseArray" << endl;
         return;
     }
 
-    while(first < last)
+    while (first < last)
     {
-        swaputil(p[first],p[last]);
+        swaputil(p[first], p[last]);
         first++;
         last--;
     }
@@ -34,7 +34,7 @@ void ReverseArray(T p[], int first, int last, int size)
 template <typename T>
 void PrintArray(T p[], int size)
 {
-    for( int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
         cout << p[i] << " ";
     }
@@ -44,17 +44,27 @@ void PrintArray(T p[], int size)
 template <typename T>
 void PrintArray(T p[], int start, int end)
 {
-    //should add boundary checks
-    for( int i = start; i <= end; i++)
+    // should add boundary checks
+    for (int i = start; i <= end; i++)
     {
         cout << p[i] << " ";
     }
     cout << endl;
 }
 
-
-
-void SayHello()
+// increasing sorted order
+template <typename T>
+bool BinarySearchArray(T p[], const T &element, int start, int end)
 {
-    cout << "Hello " << "World!" << endl;
+    while (start <= end)
+    {
+        int mid = (start + end) / 2;
+        if( p[mid] < element)
+            start = mid + 1;
+        else if( p[mid] > element)
+            end = mid -1;
+        else
+            return true; //element found 
+    }
+    return false;
 }

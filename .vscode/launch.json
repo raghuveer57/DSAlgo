@@ -135,7 +135,20 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "SearchRotatedSortedArray",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Arrays/SearchRotatedSortedArray",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
+
 
     ]
 }
