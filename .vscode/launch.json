@@ -147,6 +147,18 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "HanoiTower",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/AdHocProblems/HanoiTower",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
 
 
