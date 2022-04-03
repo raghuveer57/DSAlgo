@@ -1,5 +1,4 @@
-# Algorithmica
- Problems and notes collected when reading the udemy course.
+Problems and notes collected when reading about DS and Algorithms
 
 # For Compilation
 ```
