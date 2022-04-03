@@ -159,7 +159,32 @@
             "environment": [],
             "externalConsole": false,
             "MIMode": "lldb"
+        },
+        {
+            "name": "MirrorTree",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/Trees/MirrorTree",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
+        },
+        {
+            "name": "ReverseList",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/LinkedLists/ReverseList",
+            "args": [ ],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb"
         }
+
 
 
     ]

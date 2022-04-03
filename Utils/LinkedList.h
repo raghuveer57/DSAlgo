@@ -133,4 +133,22 @@ public:
         } 
         cout << endl;
     }
+
+    // Helper to reverse a list
+    void reverseList()
+    {
+        Node* curr = head;
+        Node* prev = nullptr;
+        Node* temp = nullptr;
+        while(curr)
+        {
+            temp = curr->next;
+            curr->next = prev;
+            prev = curr;
+            curr = temp;
+        }
+        // set the head to the last node
+        head= prev;
+    }
+
 };

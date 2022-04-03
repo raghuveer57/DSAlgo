@@ -138,6 +138,35 @@ void LevelOrderTraversal(TreeNode *root)
             q.push(node->right);
     }
 }
+
+void LevelOrderTraversalInReverse(TreeNode *root)
+{
+    if (root == nullptr)
+        return;
+    queue<TreeNode *> q;
+    stack<TreeNode* > s;
+    q.push(root);
+
+    while (!q.empty())
+    {
+        // print the first element and pop it
+        TreeNode *node = q.front();
+        q.pop();
+
+        // push the respective left and right nodes into the queue
+        if (node->right != nullptr)
+            q.push(node->right);
+        if (node->left != nullptr)
+            q.push(node->left);
+        s.push(node);
+    }
+
+    while(!s.empty())
+    {
+        cout << s.top()->data << " ";
+        s.pop();
+    }
+}
 int main()
 {
     TreeNode *root = TreeNode::constructTree();
@@ -158,6 +187,9 @@ int main()
     cout << endl;
     cout << "Level Order BFS" << endl;
     LevelOrderTraversal(root);
+    cout << endl;
+    cout << "Level Order Reverse" << endl;
+    LevelOrderTraversalInReverse(root);
     cout << endl;
     return 0;
 }

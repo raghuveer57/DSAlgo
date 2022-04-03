@@ -6,5 +6,6 @@ add_compile_options(-std=c++11)
 
 # Add source to this project's executable.
 add_executable (Traversals "Traversals.cpp" "../Utils/BinaryTree.h")
+add_executable (MirrorTree "MirrorTree.cpp" "../Utils/BinaryTree.h")
 
 # TODO: Add tests and install targets if needed.
