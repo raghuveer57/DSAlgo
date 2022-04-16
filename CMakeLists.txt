@@ -12,4 +12,5 @@ add_subdirectory("Arrays")
 add_subdirectory("LinkedLists")
 add_subdirectory("Queues")
 add_subdirectory("Trees")
+add_subdirectory("Matrix")
 
